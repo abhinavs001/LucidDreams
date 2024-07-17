@@ -13,7 +13,7 @@ const CreatePost = () => {
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const POST_DATA_API = `${BASE_URL}/api/v1/posts/post`;
   const HF_API_KEY = process.env.REACT_APP_HF_API_TOKEN;
-
+  const HF_KEY = `Bearer ${HF_API_KEY}`;
   console.log("POST_DATA_API IS", POST_DATA_API)
   const navigate = useNavigate();
 
@@ -54,7 +54,7 @@ const CreatePost = () => {
             const response = await fetch(
               "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
               {
-                headers: { Authorization: `Bearer ${HF_API_KEY}`},
+                headers: { Authorization: HF_KEY},
                 method: "POST",
                 body: JSON.stringify(data),
               }
@@ -90,7 +90,7 @@ const CreatePost = () => {
             const response = await fetch(
               "https://api-inference.huggingface.co/models/mann-e/Mann-E_Dreams",
               {
-                headers: { Authorization:`Bearer ${HF_API_KEY}`},
+                headers: { Authorization:HF_KEY},
                 method: "POST",
                 body: JSON.stringify(data),
               }
