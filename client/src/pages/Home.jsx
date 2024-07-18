@@ -24,7 +24,7 @@ const Home = () => {
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState(null);
   const BASE_URL = process.env.REACT_APP_BASE_URL
-  const POST_DATA_API = BASE_URL + "/api/v1/posts/post"
+  const POST_DATA_API = "https://image-gen-api.vercel.app/api/v1/posts/post"
 
   const fetchPosts = async () => {
     setLoading(true)
