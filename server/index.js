@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.use(cors({
-  origin: "https://image-gen-api.vercel.app",
+  origin: "*",
   credentials: true,
 }));
 
