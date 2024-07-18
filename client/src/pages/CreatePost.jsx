@@ -11,7 +11,7 @@ import CreatePageDropDown from '../components/CreatePageDropDown';
 
 const CreatePost = () => {
   const BASE_URL = process.env.REACT_APP_BASE_URL;
-  const POST_DATA_API = `${BASE_URL}/api/v1/posts/post`;
+  const POST_DATA_API = "https://image-gen-api.vercel.app/api/v1/posts/post" ;
   const HF_API_KEY = process.env.REACT_APP_HF_API_TOKEN;
   const HF_KEY = `Bearer ${HF_API_KEY}`;
   console.log("POST_DATA_API IS", POST_DATA_API)
