@@ -359,8 +359,8 @@ const Summarize = () => {
         <span className='blue_gradient '>TranslateGPT</span>
       </h1>
       <h2 className='desc'>
-        Simplify your reading with us, an open-source article summarizer and translater
-        that transforms lengthy articles into clear and concise summaries and translates it if you wish.
+        Simplify your reading with us, an open-source article summarizer and translator
+        that transforms lengthy articles into clear and concise summaries and translates them if you wish.
       </h2>
       </header>
 
