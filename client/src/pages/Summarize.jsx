@@ -83,8 +83,9 @@ const Summarize = () => {
         method: 'GET',
         url: 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize',
         params: {
-          url: urlInput ,
-          length: '3'
+            url: 'https://time.com/6266679/musk-ai-open-letter/',
+            lang: 'en',
+            engine: '2'
         },
         headers: {
           'X-RapidAPI-Key': RAPID_API,
@@ -111,9 +112,9 @@ const Summarize = () => {
         method: 'GET',
         url: 'https://article-extractor-and-summarizer.p.rapidapi.com/summarize',
         params: {
-          url: urlInput ,
-          length: '3',
-          lang: target
+            url: 'https://time.com/6266679/musk-ai-open-letter/',
+            lang: 'en',
+            engine: '2'
         },
         headers: {
           'X-RapidAPI-Key': RAPID_API,
